@@ -65,3 +65,9 @@ var server = http.createServer((request, response) => {
 server.listen(3000, () => {
   console.log("Server listening on port 3000.")
 }); //start HTTP server
+
+
+
+//Socket.IO server-------------------------------------------------------------- 
+var chatServer = require('./lib/chat_server');
+chatServer.listen(server);
